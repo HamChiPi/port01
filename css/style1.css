@@ -1,0 +1,105 @@
+html{
+    scroll-behavior: smooth;
+}
+/* logo & menu */
+#navTop {
+    position: fixed; top: 0;
+    width: 100%; height: 70px;
+    z-index: 1; background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+#navTop_box{
+    width:  80%; height: 70px;
+    margin: auto; transition: all 1s;
+    position: relative;
+}
+#navTop_box #logo {
+    width: 240px; overflow: hidden;
+}
+#navTop_box #logo>div{
+    width: 80px;
+    float: left;
+    line-height: 70px;
+}
+#navTop_box #logo>div>img{
+    width: 100%;
+}
+#navTop_box #logo>span{
+    display: inline-block; font-size: 14px;
+    position: relative; top: 30px; left: 10px;
+}
+#navTop_box #topMenu {
+    position: absolute; right: 0; top: 0;
+    overflow: hidden;
+}
+#navTop_box #topMenu li {
+    float: left; padding-left: 30px; line-height: 70px;
+}
+#navTop_box #topMenu li a {
+    font-size: 18px;
+}
+#navTop_box #topMenu li>a.active{
+    color: pink; border-bottom: 3px solid pink;
+    font-weight: bold; padding-bottom:  4px;
+}
+/* 공통 */
+.section{
+    width: 100%; height: 100vh;
+    border-bottom: 1px dotted grey;
+}
+.s0 {
+    background: url(../img/bg.jpg) no-repeat center center;
+    background-size: cover; 
+}
+.s0>.section_home>h1 {
+    color: #fff; font-size: 130px;
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* s1 프로파일 */
+.s1 {
+    background-color: lightgreen;
+}
+.pr_container {
+    display: flex; width: 80%; margin: auto;
+    padding-top: 100px;
+    gap: 20px;
+}
+.pr_profile {
+    flex: 1;
+    padding-left: 60px;
+}
+.pr_profile>ul {
+    margin-top: 20px;
+    border-left: 7px solid pink;
+}
+.pr_profile>ul>li {
+    padding-left: 30px; line-height: 30px;
+}
+.pr_profile>ul>li>i {
+    margin-right: 10px;
+}
+/* 라이트 박스 */
+.right_box{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pr_title {
+    border-left: 3px solid pink;
+    padding-left: 10px;
+}
+.pr_date {
+    float: left;
+    padding-top: 20px; padding-left: 10px;
+}
+.pr_txt {
+    line-height: 1.5;
+    float: left;
+    padding-top: 20px; padding-left: 10px;
+}
+.pr_txt>div {
+    font-weight: bold;
+}
+/* 콘택트 */
